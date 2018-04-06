@@ -31,6 +31,7 @@ crontab -e
 ```
 
 mkdir -p /opt/librenms/html/plugins/Weathermap/output/history
+
 cd /opt/librenms/html/plugins/Weathermap/output/history
 
 git clone https://github.com/chasgames/Weathermap-History

@@ -24,6 +24,13 @@ convert  -delay 30 -loop 0 *.png /opt/librenms/html/plugins/Weathermap/output/hi
 rm /opt/weathermap-history/history/*
 ```
 
+crontab -e
+```
+*/5 18-23 * * * /opt/histogram_weathermaps/getweather.sh >> /dev/null 2>&1
+0 3 * * * /opt/histogram_weathermaps/makeGIF.sh >> /dev/null 2>&1
+```
+
+
 mkdir -p /opt/librenms/html/plugins/Weathermap/output/history
 cd /opt/librenms/html/plugins/Weathermap/output/history
 

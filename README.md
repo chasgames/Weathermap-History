@@ -7,7 +7,7 @@ The guide below will walk you through the shell scripts to creates animations of
 ---
 
 ## Prerequisites
-- Convert (yum install ImageMagick , and on ubuntu apt install imagemagick ) - used to convert pngs to gif
+- Access to the "convert" command (yum install ImageMagick , and on ubuntu apt install imagemagick ) - used to convert pngs to gif
 - (Optional) pngquant (yum install pngquant , apt install pngquant) - PNG Optimization
 - (Optional) gifsicle (yum install gifsicle, apt install gifsicle) - GIF Optimization (shows a GIF filesize reduction of 87%)
 - Assumes your librenms path is /opt/librenms (otherwise you will need to edit the scripts)
@@ -43,7 +43,7 @@ rm /opt/weathermap-history/history/*
 ```
 chmod +x makeGIF.sh
 
-crontab -e 
+(root) crontab -e 
 
 (First line will create PNGs at 5 minute intervals between 18:00 up to 23:55, change this to your busiest periods)
 (Second line creates the GIF at 3am)

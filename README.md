@@ -9,6 +9,7 @@ The guide below will walk you through the shell scripts to creates animations of
 ## Prerequisites
 
 - (Optional) pngquant (e.g yum install pngquant) - PNG Optimization
+- (Optional) gifsicle (e.g yum install gifsicle) - GIF Optimization (shows a GIF filesize reduction of 87%)
 - Assumes your librenms path is /opt/librenms (otherwise you will need to edit the scripts)
 
 ---
@@ -37,6 +38,7 @@ cd /opt/weathermap-history/history/
 mkdir -p /opt/librenms/html/plugins/Weathermap/output/history/$DATE
 pngquant --speed 9 *.png -f --ext .png
 convert  -delay 30 -loop 0 *.png /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif
+gifsicle -O3 /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif -o /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif
 rm /opt/weathermap-history/history/*
 ```
 chmod +x makeGIF.sh

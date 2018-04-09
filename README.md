@@ -25,6 +25,7 @@ vim getweather.sh (edit MAPNAME.png and file path if wrong)
 DATE=`date '+%y%m%d%H%M'`
 cp /opt/librenms/html/plugins/Weathermap/output/MAPNAME.png /opt/weathermap-history/history/MAPNAME_$DATE.png
 ```
+chmod +x getweather.sh
 
 vim makeGIF.sh
 ```
@@ -38,6 +39,7 @@ pngquant --speed 9 *.png -f --ext .png
 convert  -delay 30 -loop 0 *.png /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif
 rm /opt/weathermap-history/history/*
 ```
+chmod +x makeGIF.sh
 
 crontab -e 
 

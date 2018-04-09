@@ -7,7 +7,7 @@ The guide below will walk you through the shell scripts to creates animations of
 ---
 
 ## Prerequisites
-
+- Convert (installed default on centos i think, and on ubuntu apt install imagemagick) - used to convert pngs to gif
 - (Optional) pngquant (e.g yum install pngquant) - PNG Optimization
 - (Optional) gifsicle (e.g yum install gifsicle) - GIF Optimization (shows a GIF filesize reduction of 87%)
 - Assumes your librenms path is /opt/librenms (otherwise you will need to edit the scripts)

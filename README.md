@@ -43,7 +43,9 @@ rm /opt/weathermap-history/history/*
 ```
 chmod +x makeGIF.sh
 
-(root) crontab -e 
+Open Roots cronjob
+
+crontab -e 
 
 (First line will create PNGs at 5 minute intervals between 18:00 up to 23:55, change this to your busiest periods)
 (Second line creates the GIF at 3am)

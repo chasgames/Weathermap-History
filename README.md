@@ -73,9 +73,7 @@ http://1.1.1.1/plugins/Weathermap/output/history/index.html
 ##  Troubleshooting
 
 When selecting a date, GIF doesn't show -
-Depending on GIF size it can take a while to load, 1M < GIF should take less than 10 seconds. 5M GIF can take up to 30 seconds so you will need to shorten the time period or use the resize function in gifsicle. 
-
-Use chrome inspect tool to find out the GIF link it's trying to pull and check it exists on the filesystem.
+Depending on GIF size it can take a while to load, 1M < GIF should take less than 10 seconds. 5M GIF can take up to 30 seconds so you will need to shorten the time period or use the resize function in gifsicle. Use chrome inspect tool to find out the GIF link it's trying to pull and check it exists on the filesystem.
 
 GIF is not made -
 Try running ./getweather.sh manually it should copy the weathermap into /opt/weathermap-history/history as a temporary location to hold the pngs for the time period. Check that works first. Then redirect the cronjobs to a log file instead of /dev/null to see what the problem is.

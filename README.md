@@ -58,7 +58,7 @@ crontab -e
 cd /opt/librenms/html/plugins/Weathermap/output
 
 
-Now clone the repo
+Now clone the repo into the history folder like so
 ```
 git clone https://github.com/chasgames/Weathermap-History history
 ```

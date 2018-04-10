@@ -47,8 +47,8 @@ Open Roots cronjob
 
 crontab -e 
 
-(First line will create PNGs at 5 minute intervals between 18:00 up to 23:55, change this to your busiest periods)
-(Second line creates the GIF at 3am)
+(First line will create PNGs at 5 minute intervals between 18:00 up to 23:55, change this to your busiest periods but i would keep up to a 6 hour period otherwise you end up with huge file sized GIFs)  
+(Second line creates the GIF at 3am, i would leave this because we explicitly set -d yesterday to compensate the date)
 
 ```
 */5 18-23 * * * /opt/weathermap-history/getweather.sh >> /dev/null 2>&1

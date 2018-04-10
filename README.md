@@ -33,10 +33,9 @@ vim makeGIF.sh
 #!/bin/bash
 
 DATE=$(date "+%Y-%m-%d" -d "yesterday")
-
-cd /opt/weathermap-history/history/
 mkdir -p /opt/librenms/html/plugins/Weathermap/output/history/$DATE
-pngquant --speed 9 *.png -f --ext .png
+cd /opt/weathermap-history/history/
+pngquant --force --quality=60-70 *.png -f --ext .png
 convert  -delay 30 -loop 0 *.png /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif
 gifsicle -O3 /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif -o /opt/librenms/html/plugins/Weathermap/output/history/$DATE/$DATE.gif
 rm /opt/weathermap-history/history/*

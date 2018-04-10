@@ -78,7 +78,7 @@ Depending on GIF size it can take a while to load, 1M < GIF should take less tha
 Use chrome inspect tool to find out the GIF link it's trying to pull and check it exists on the filesystem.
 
 GIF is not made -
-when running ./getweather.sh it should copy the weathermap into /opt/weathermap-history/history as a temporary location to hold the pngs for the time period. Check that works first. Then redirect the cronjobs to a log file instead of /dev/null to see what the problem is.
+Try running ./getweather.sh manually it should copy the weathermap into /opt/weathermap-history/history as a temporary location to hold the pngs for the time period. Check that works first. Then redirect the cronjobs to a log file instead of /dev/null to see what the problem is.
 
 
 ---

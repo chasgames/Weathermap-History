@@ -2,7 +2,7 @@
 
 This repo is just the web html to display the animated weathermap GIFs based on chosen date.
 
-The guide below will walk you through the shell scripts to creates animations of the weathermap daily  (GIF Format)
+Please follow the guide below, which will walk you through the shell scripts which create GIF animations of the weathermap daily.
 
 ---
 

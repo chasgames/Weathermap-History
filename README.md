@@ -7,9 +7,9 @@ Please follow the guide below, which will walk you through the shell scripts whi
 ---
 
 ## Prerequisites
-- Access to the "convert" command (yum install ImageMagick , and on ubuntu apt install imagemagick ) - used to convert pngs to gif
-- (Optional) pngquant (yum install pngquant , apt install pngquant) - PNG Optimization
-- (Optional) gifsicle (yum install gifsicle, apt install gifsicle) - GIF Optimization (shows a GIF filesize reduction of 87%)
+- "convert" command (yum install ImageMagick , and on ubuntu apt install imagemagick ) - used to convert pngs to gif
+- "pngquant" command (yum install pngquant , apt install pngquant) - PNG Optimization
+- "gifsicle" command (yum install gifsicle, apt install gifsicle) - GIF Optimization which shows a GIF filesize reduction of 87%
 - Assumes your librenms path is /opt/librenms (otherwise you will need to edit the scripts)
 
 ---
